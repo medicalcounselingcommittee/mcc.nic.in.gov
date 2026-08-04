@@ -807,7 +807,34 @@ var S3WaaSAccessibilityParams = {"blogInfoName":"Medical Counselling Committee (
         
       </div></div></div></div><div data-vc-full-width="true" data-vc-full-width-temp="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid accent-fixed-color tab-rowbg-home8 vc_custom_1648122825712"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
 		<div class="gen-list no-border no-bg padding-20 border-radius-medium default-list  col-four medium-font fore-color-white ">
-		<h2 class="title-font-bold title-font-black">ADMISSION SERVICES</h2>		<ul>
+		
+			<h2 class="title-font-bold title-font-black" id="realtime-clock">Loading clock...</h2>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+    
+    // Formats date and time (e.g., Wed, Aug 5, 2026, 02:51:29 AM)
+    const formattedDateTime = now.toLocaleString('en-US', {
+      weekday: 'short',
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true
+    });
+    
+    document.getElementById('realtime-clock').textContent = formattedDateTime;
+  }
+
+  // Run immediately and update every 1000ms (1 second)
+  updateClock();
+  setInterval(updateClock, 1000);
+</script>
+			
+			<ul>
 				</ul>
 				</div>
 		</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-temp="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1650523002159"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">	
